@@ -66,7 +66,7 @@ wpi.java.configureExecutableTasks(jar)
 wpi.java.configureTestTasks(test)//Sets the XRP Client Host
 
 wpi.sim.envVar("HALSIMXRP_HOST", "192.168.42.1")
-wpi.sim.addXRPClient().defaultEnabled = false
+wpi.sim.addXRPClient().defaultEnabled = true
 
 // Configure string concat to always inline compile
 tasks.withType(JavaCompile).configureEach {
